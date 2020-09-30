@@ -71,6 +71,6 @@ namespace ClassLibrary1.Services
             await serviceClient.SendAsync(targetDeviceId, payload);
  
         }
-        // ++ Azure Function för att köra det (add new project)
+        // +++ Azure Function för att köra det (add new project)
     }
 }
