@@ -7,12 +7,13 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Microsoft.Azure.Devices;
 using LibraryUWP.Models;
 using LibraryUWP.Services;
 
 namespace AzureFunction
 {
-    public static class SendMessageToDevice
+    public static class Send_MessageToDevice
     {
         private static readonly ServiceClient serviceClient =
             ServiceClient.CreateFromConnectionString(Environment.GetEnvironmentVariable("IotHubConnection"));
